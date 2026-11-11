@@ -1,0 +1,82 @@
+:root {
+  --paper: #ffffff;
+  --wash: #eaf2f9;
+  --line: #c3d8ea;
+  --ink: #3f6483;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Noto Serif KR", "Nanum Myeongjo", "Batang", Georgia, serif;
+  line-height: 1.9;
+  font-size: 1.0625rem;
+}
+
+header, section, footer {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+header .mark { letter-spacing: 0.2em; }
+nav a, .lang a { color: var(--ink); text-decoration: none; margin-left: 1.25rem; font-size: 0.9rem; }
+nav a:hover, .lang a:hover { border-bottom: 1px solid var(--ink); }
+
+h1 { font-size: 3rem; font-weight: 400; letter-spacing: 0.15em; margin-bottom: 1rem; }
+h2 { font-size: 1.25rem; font-weight: 400; letter-spacing: 0.3em; margin-bottom: 2rem; }
+h3 { font-size: 1.0625rem; font-weight: 400; }
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to bottom, var(--paper), var(--wash) 85%, var(--paper));
+}
+
+section { border-top: 1px solid var(--line); }
+
+.list { list-style: none; }
+.list li { padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+.list li:last-child { border-bottom: 0; }
+.list .tag { display: inline-block; min-width: 3rem; opacity: 0.7; }
+
+blockquote { border-left: 1px solid var(--line); padding-left: 1.5rem; }
+blockquote p { margin-bottom: 1rem; }
+cite { display: block; font-size: 0.85rem; opacity: 0.7; font-style: normal; }
+
+form { display: grid; gap: 1.25rem; }
+label { display: grid; gap: 0.4rem; font-size: 0.9rem; }
+input, textarea {
+  font: inherit; color: var(--ink); background: var(--paper);
+  border: 1px solid var(--line); padding: 0.6rem 0.75rem; border-radius: 0;
+}
+input:focus, textarea:focus { outline: 0; background: var(--wash); }
+button {
+  font: inherit; color: var(--ink); background: var(--wash);
+  border: 1px solid var(--line); padding: 0.6rem 1.5rem; cursor: pointer; justify-self: start;
+}
+button:hover { background: var(--line); }
+.note { margin-top: 1.5rem; font-size: 0.9rem; }
+.note a { color: var(--ink); }
+
+footer { border-top: 1px solid var(--line); font-size: 0.85rem; opacity: 0.8; }
+
+@media (max-width: 40rem) {
+  h1 { font-size: 2.25rem; }
+  section { padding: 3.5rem 1.25rem; }
+}
