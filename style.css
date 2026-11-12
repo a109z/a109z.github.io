@@ -55,6 +55,21 @@ section { border-top: 1px solid var(--line); }
 .list li:last-child { border-bottom: 0; }
 .list .tag { display: inline-block; min-width: 3rem; opacity: 0.7; }
 
+header a.mark { color: var(--ink); text-decoration: none; }
+h3 a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+h3 a:hover { border-bottom-color: var(--ink); }
+.page h1 { font-size: 2.25rem; }
+.tagline { font-size: 1.5rem; letter-spacing: 0.04em; line-height: 1.8; max-width: 36rem; }
+.premise { font-size: 1.375rem; line-height: 2.1; max-width: 36rem; margin-top: 1.5rem; padding-left: 1.5rem; border-left: 1px solid var(--line); }
+.page .premise { font-size: 1.125rem; }
+.pair .tag { min-width: 4.5rem; }
+#method .tag { min-width: 9.5rem; margin-right: 0.5rem; }
+h2 .tag { margin-right: 1rem; opacity: 0.7; }
+.steps { padding-left: 1.5rem; }
+.steps li { padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.steps li:last-child { border-bottom: 0; }
+#contact a { color: var(--ink); }
+
 blockquote { border-left: 1px solid var(--line); padding-left: 1.5rem; }
 blockquote p { margin-bottom: 1rem; }
 cite { display: block; font-size: 0.85rem; opacity: 0.7; font-style: normal; }
@@ -78,5 +93,6 @@ footer { border-top: 1px solid var(--line); font-size: 0.85rem; opacity: 0.8; }
 
 @media (max-width: 40rem) {
   h1 { font-size: 2.25rem; }
+  .premise { font-size: 1.125rem; }
   section { padding: 3.5rem 1.25rem; }
 }
