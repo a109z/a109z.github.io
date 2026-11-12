@@ -66,6 +66,8 @@ html[lang="ko"] .tagline { font-size: 1.25rem; letter-spacing: 0; max-width: non
 .pair .tag { min-width: 4.5rem; }
 #method .tag { min-width: 9.5rem; margin-right: 0.5rem; }
 h2 .tag { margin-right: 1rem; opacity: 0.7; }
+.essay p { margin-bottom: 1rem; }
+.hero .note { margin-top: 1rem; }
 .steps { padding-left: 1.5rem; }
 .steps li { padding: 1rem 0; border-bottom: 1px solid var(--line); }
 .steps li:last-child { border-bottom: 0; }
